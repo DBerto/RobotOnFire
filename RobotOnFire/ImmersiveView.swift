@@ -13,6 +13,7 @@ import AVKit
 struct ImmersiveView: View {
     
     @EnvironmentObject var globalState: GlobalState
+    @State var bot: Entity?
     
     var body: some View {
         
@@ -26,6 +27,8 @@ struct ImmersiveView: View {
                 fatalError()
             }
             
+            let animation = immersiveContentEntity.availableAnimations.first!
+            immersiveContentEntity.playAnimation(animation.repeat(), transitionDuration: 10, startsPaused: false)
             content.add(immersiveContentEntity)
             immersiveContentEntity.position = SIMD3(x: 0, y: 0.1, z: 0)
             immersiveContentEntity.scale = SIMD3(Size3D(width: 0.005, height: 0.005, depth: 0.005))

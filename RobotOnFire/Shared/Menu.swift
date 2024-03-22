@@ -20,7 +20,7 @@ struct Menu: View {
         
         VStack {
             
-            Button(!globalState.showImmersiveSpace ? "Go immersive" : "Exit") {
+            Button(!globalState.showImmersiveSpace ? "Dance" : "Exit") {
                 Task {
                     if globalState.showImmersiveSpace {
                         globalState.showImmersiveSpace = false
@@ -33,10 +33,6 @@ struct Menu: View {
                 }
             }
             
-            Button("Dance") {
-                
-            }
-            
             Button("Say something") {
                 if !(audioPlayer?.isPlaying ?? false) {
                     audioPlayer?.play()
@@ -45,13 +41,6 @@ struct Menu: View {
                 }
             }
             
-            Button("Do the barrel roll") {
-                
-            }
-            
-            Button("Ouch") {
-                
-            }
         }.task {
             prepareSound()
         }
