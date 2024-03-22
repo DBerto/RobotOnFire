@@ -15,8 +15,9 @@ struct RobotOnFireApp: App {
     var body: some Scene {
         
         WindowGroup {
-            Menu().environmentObject(state)
-        }
+            Menu()
+                .environmentObject(state)
+        }.defaultSize(CGSize(width: 200, height: 500))
 
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView().environmentObject(state)
@@ -26,5 +27,8 @@ struct RobotOnFireApp: App {
 
 class GlobalState: ObservableObject {
     @Published var showImmersiveSpace = false
-    @Published var immersiveSpaceIsShown = false
+    @Published var startDancing = false
+    @Published var doTheBarrelRoll = false
+    @Published var burnIt = false
+    @Published var saySomething = false
 }

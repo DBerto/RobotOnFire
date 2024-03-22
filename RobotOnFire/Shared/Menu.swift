@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct Menu: View {
     
     @EnvironmentObject var globalState: GlobalState
-    
+    @State private var audioPlayer: AVAudioPlayer?
     
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
@@ -37,7 +38,11 @@ struct Menu: View {
             }
             
             Button("Say something") {
-                
+                if !(audioPlayer?.isPlaying ?? false) {
+                    audioPlayer?.play()
+                } else {
+                    audioPlayer?.stop()
+                }
             }
             
             Button("Do the barrel roll") {
@@ -47,6 +52,18 @@ struct Menu: View {
             Button("Ouch") {
                 
             }
+        }.task {
+            prepareSound()
+        }
+    }
+    
+    private func prepareSound() {
+    
+        guard let path = Bundle.main.path(forResource: "sea_sounds", ofType: "aiff") else { return }
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
+        } catch {
+            print("Error loading audio file: \(error)")
         }
     }
 }

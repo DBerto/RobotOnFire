@@ -8,8 +8,12 @@
 import SwiftUI
 import RealityKit
 import RealityKitContent
+import AVKit
 
 struct ImmersiveView: View {
+    
+    @EnvironmentObject var globalState: GlobalState
+
     
     var body: some View {
         
@@ -21,6 +25,7 @@ struct ImmersiveView: View {
             
             content.add(immersiveContentEntity)
             immersiveContentEntity.position = SIMD3(x: 0, y: 0, z: 0)
+            immersiveContentEntity.scale = SIMD3(Size3D(width: 1, height: 1, depth: 1))
             addLights(immersiveContentEntity: immersiveContentEntity)
         }
     }
@@ -29,11 +34,13 @@ struct ImmersiveView: View {
         Task {
             // Add an ImageBasedLight for the immersive content
             guard let resource = try? await EnvironmentResource(named: "ImageBasedLight") else { return }
-            let iblComponent = ImageBasedLightComponent(source: .single(resource), intensityExponent: 0.25)
-            await immersiveContentEntity.components.set(iblComponent)
-            await immersiveContentEntity.components.set(ImageBasedLightReceiverComponent(imageBasedLight: immersiveContentEntity))
+            let iblComponent = ImageBasedLightComponent(source: .single(resource), intensityExponent: 0.01)
+            immersiveContentEntity.components.set(iblComponent)
+            immersiveContentEntity.components.set(ImageBasedLightReceiverComponent(imageBasedLight: immersiveContentEntity))
         }
     }
+    
+   
 }
 
 #Preview(immersionStyle: .full) {
