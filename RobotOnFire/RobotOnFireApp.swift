@@ -14,6 +14,10 @@ struct RobotOnFireApp: App {
             ContentView()
         }
 
+        ImmersiveSpace(id: "ImmersivePartialSpace") {
+            ImmersiveView()
+        }.immersionStyle(selection: .constant(.full), in: .full)
+        
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView()
         }.immersionStyle(selection: .constant(.full), in: .full)
