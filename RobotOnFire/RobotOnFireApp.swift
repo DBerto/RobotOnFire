@@ -20,7 +20,7 @@ struct RobotOnFireApp: App {
 
         ImmersiveSpace(id: "ImmersiveSpace") {
             ImmersiveView().environmentObject(state)
-        }.immersionStyle(selection: .constant(.progressive), in: .progressive)
+        }.immersionStyle(selection: .constant(.full), in: .full)
     }
 }
 
