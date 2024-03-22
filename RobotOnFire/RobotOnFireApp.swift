@@ -9,17 +9,22 @@ import SwiftUI
 
 @main
 struct RobotOnFireApp: App {
+        
+    @ObservedObject var state = GlobalState()
+    
     var body: some Scene {
+        
         WindowGroup {
-            ContentView()
+            Menu().environmentObject(state)
         }
 
-        ImmersiveSpace(id: "ImmersivePartialSpace") {
-            ImmersiveView()
-        }.immersionStyle(selection: .constant(.full), in: .full)
-        
         ImmersiveSpace(id: "ImmersiveSpace") {
-            ImmersiveView()
-        }.immersionStyle(selection: .constant(.full), in: .full)
+            ImmersiveView().environmentObject(state)
+        }.immersionStyle(selection: .constant(.progressive), in: .progressive)
     }
+}
+
+class GlobalState: ObservableObject {
+    @Published var showImmersiveSpace = false
+    @Published var immersiveSpaceIsShown = false
 }

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "42EE4C42-8272-41D6-A786-2169E5154EE0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52EA19AF-E781-47A9-A32E-74876953E7A9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RobotOnFire/ImmersiveView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "addLights(immersiveContentEntity:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "52EA19AF-E781-47A9-A32E-74876953E7A9 - 69c2c2898025d55e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in RobotOnFire.ImmersiveView.addLights(immersiveContentEntity: RealityKit.Entity) -&gt; ()"
+                  moduleName = "RobotOnFire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmosca/RobotOnFire/RobotOnFire/ImmersiveView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31">
+               </Location>
+               <Location
+                  uuid = "52EA19AF-E781-47A9-A32E-74876953E7A9 - 878d1e49c61e83eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(12) suspend resume partial function for closure #1 @Sendable () async -&gt; () in RobotOnFire.ImmersiveView.addLights(immersiveContentEntity: RealityKit.Entity) -&gt; ()"
+                  moduleName = "RobotOnFire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmosca/RobotOnFire/RobotOnFire/ImmersiveView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5510BD79-1277-4C5D-BC30-2A3EDF987C84"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RobotOnFire/ImmersiveView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "addLights(immersiveContentEntity:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5510BD79-1277-4C5D-BC30-2A3EDF987C84 - 69c2c2898025d57f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in RobotOnFire.ImmersiveView.addLights(immersiveContentEntity: RealityKit.Entity) -&gt; ()"
+                  moduleName = "RobotOnFire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmosca/RobotOnFire/RobotOnFire/ImmersiveView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32">
+               </Location>
+               <Location
+                  uuid = "5510BD79-1277-4C5D-BC30-2A3EDF987C84 - 1f0a5d2876f76776"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in RobotOnFire.ImmersiveView.addLights(immersiveContentEntity: RealityKit.Entity) -&gt; ()"
+                  moduleName = "RobotOnFire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmosca/RobotOnFire/RobotOnFire/ImmersiveView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32">
+               </Location>
+               <Location
+                  uuid = "5510BD79-1277-4C5D-BC30-2A3EDF987C84 - d253efcb5d46a96d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in RobotOnFire.ImmersiveView.addLights(immersiveContentEntity: RealityKit.Entity) -&gt; ()"
+                  moduleName = "RobotOnFire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmosca/RobotOnFire/RobotOnFire/ImmersiveView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32">
+               </Location>
+               <Location
+                  uuid = "5510BD79-1277-4C5D-BC30-2A3EDF987C84 - 899b7e6a4318fb64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 @Sendable () async -&gt; () in RobotOnFire.ImmersiveView.addLights(immersiveContentEntity: RealityKit.Entity) -&gt; ()"
+                  moduleName = "RobotOnFire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmosca/RobotOnFire/RobotOnFire/ImmersiveView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32">
+               </Location>
+               <Location
+                  uuid = "5510BD79-1277-4C5D-BC30-2A3EDF987C84 - 3ce3090d29ea0d53"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for closure #1 @Sendable () async -&gt; () in RobotOnFire.ImmersiveView.addLights(immersiveContentEntity: RealityKit.Entity) -&gt; ()"
+                  moduleName = "RobotOnFire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmosca/RobotOnFire/RobotOnFire/ImmersiveView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32">
+               </Location>
+               <Location
+                  uuid = "5510BD79-1277-4C5D-BC30-2A3EDF987C84 - 878d1e49c61e83ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(12) suspend resume partial function for closure #1 @Sendable () async -&gt; () in RobotOnFire.ImmersiveView.addLights(immersiveContentEntity: RealityKit.Entity) -&gt; ()"
+                  moduleName = "RobotOnFire"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmosca/RobotOnFire/RobotOnFire/ImmersiveView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
