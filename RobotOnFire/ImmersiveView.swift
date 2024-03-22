@@ -15,7 +15,11 @@ struct ImmersiveView: View {
         
         RealityView { content in
             // Add the initial RealityKit content
-            guard let immersiveContentEntity = try? await Entity(named: "Robot", in: realityKitContentBundle) else {
+            if let skybox = Skybox.shared.createSkybox() {
+                content.add(skybox)
+            }
+            
+            guard let immersiveContentEntity = try? await Entity(named: "Bot", in: realityKitContentBundle) else {
                 fatalError()
             }
             

@@ -7,23 +7,24 @@
 
 def Xform "Root"
 {
-    reorder nameChildren = ["Sphere_Left", "Sphere_Right", "GridMaterial"]
+    reorder nameChildren = ["GridMaterial", "Rumba_Dancing_bot_1", "Falling_To_Roll"]
     def "GridMaterial" (
         active = true
-        prepend references = @Materials/GridMaterial.usda@
+        references = @Materials/GridMaterial.usda@
     )
     {
         float3 xformOp:scale = (1, 1, 1)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
     }
 
-    def "Robot" (
+    def "Falling_To_Roll" (
         active = true
-        prepend references = @Robot.usdz@
+        references = @Falling To Roll.usdz@
     )
     {
-        float3 xformOp:scale = (10, 10, 10)
-        float3 xformOp:translate = (-0.9247391, 0.027452841, 1.049191)
+        reorder nameChildren = ["Rumba_Dancing_bot_1", "Materials", "vanguard_visor", "vanguard_Mesh", "mixamorig_Hips"]
+        float3 xformOp:scale = (0.0001, 0.0001, 0.0001)
+        float3 xformOp:translate = (0, -1.1920929e-7, 0)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
     }
 }
