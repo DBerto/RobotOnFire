@@ -9,27 +9,29 @@
 /* Begin PBXBuildFile section */
 		7C19AA2F2BAD950D00BCA702 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C19AA2E2BAD950D00BCA702 /* Menu.swift */; };
 		7C19AA332BADA3AD00BCA702 /* sea_sounds.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7C19AA322BADA3AD00BCA702 /* sea_sounds.aiff */; };
+		968E4C0D2BADA941005D30AC /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 968E4C0C2BADA940005D30AC /* video.mp4 */; };
 		96B8699F2BAD92E200328010 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 96B8699E2BAD92E200328010 /* RealityKitContent */; };
 		96B869A12BAD92E200328010 /* RobotOnFireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B869A02BAD92E200328010 /* RobotOnFireApp.swift */; };
-		96B869A32BAD92E200328010 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B869A22BAD92E200328010 /* ContentView.swift */; };
 		96B869A52BAD92E200328010 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B869A42BAD92E200328010 /* ImmersiveView.swift */; };
 		96B869A72BAD92E200328010 /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 96B869A62BAD92E200328010 /* ImageBasedLighting.skybox */; };
 		96B869A92BAD92E300328010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96B869A82BAD92E300328010 /* Assets.xcassets */; };
 		96B869AC2BAD92E300328010 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96B869AB2BAD92E300328010 /* Preview Assets.xcassets */; };
+		96B869B42BADA1B700328010 /* Skybox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B869B32BADA1B700328010 /* Skybox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C19AA2E2BAD950D00BCA702 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		7C19AA322BADA3AD00BCA702 /* sea_sounds.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = sea_sounds.aiff; sourceTree = "<group>"; };
+		968E4C0C2BADA940005D30AC /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		96B869992BAD92E200328010 /* RobotOnFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotOnFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B8699D2BAD92E200328010 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		96B869A02BAD92E200328010 /* RobotOnFireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotOnFireApp.swift; sourceTree = "<group>"; };
-		96B869A22BAD92E200328010 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		96B869A42BAD92E200328010 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		96B869A62BAD92E200328010 /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = ImageBasedLighting.skybox; sourceTree = "<group>"; };
 		96B869A82BAD92E300328010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96B869AB2BAD92E300328010 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		96B869AD2BAD92E300328010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96B869B32BADA1B700328010 /* Skybox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skybox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +49,7 @@
 		7C19AA2D2BAD94FF00BCA702 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				96B869A22BAD92E200328010 /* ContentView.swift */,
+				96B869B32BADA1B700328010 /* Skybox.swift */,
 				7C19AA2E2BAD950D00BCA702 /* Menu.swift */,
 			);
 			path = Shared;
@@ -76,6 +78,7 @@
 				7C19AA322BADA3AD00BCA702 /* sea_sounds.aiff */,
 				7C19AA2D2BAD94FF00BCA702 /* Shared */,
 				96B869A02BAD92E200328010 /* RobotOnFireApp.swift */,
+				968E4C0C2BADA940005D30AC /* video.mp4 */,
 				96B869A42BAD92E200328010 /* ImmersiveView.swift */,
 				96B869A62BAD92E200328010 /* ImageBasedLighting.skybox */,
 				96B869A82BAD92E300328010 /* Assets.xcassets */,
@@ -165,6 +168,7 @@
 				96B869A92BAD92E300328010 /* Assets.xcassets in Resources */,
 				96B869AC2BAD92E300328010 /* Preview Assets.xcassets in Resources */,
 				96B869A72BAD92E200328010 /* ImageBasedLighting.skybox in Resources */,
+				968E4C0D2BADA941005D30AC /* video.mp4 in Resources */,
 				7C19AA332BADA3AD00BCA702 /* sea_sounds.aiff in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,7 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96B869A32BAD92E200328010 /* ContentView.swift in Sources */,
+				96B869B42BADA1B700328010 /* Skybox.swift in Sources */,
 				96B869A12BAD92E200328010 /* RobotOnFireApp.swift in Sources */,
 				7C19AA2F2BAD950D00BCA702 /* Menu.swift in Sources */,
 				96B869A52BAD92E200328010 /* ImmersiveView.swift in Sources */,

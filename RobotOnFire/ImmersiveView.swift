@@ -13,19 +13,22 @@ import AVKit
 struct ImmersiveView: View {
     
     @EnvironmentObject var globalState: GlobalState
-
     
     var body: some View {
         
         RealityView { content in
             // Add the initial RealityKit content
-            guard let immersiveContentEntity = try? await Entity(named: "Robot", in: realityKitContentBundle) else {
+            if let skybox = Skybox.shared.createSkybox() {
+                content.add(skybox)
+            }
+            
+            guard let immersiveContentEntity = try? await Entity(named: "Bot", in: realityKitContentBundle) else {
                 fatalError()
             }
             
             content.add(immersiveContentEntity)
-            immersiveContentEntity.position = SIMD3(x: 0, y: 0, z: 0)
-            immersiveContentEntity.scale = SIMD3(Size3D(width: 1, height: 1, depth: 1))
+            immersiveContentEntity.position = SIMD3(x: 0, y: 0.1, z: 0)
+            immersiveContentEntity.scale = SIMD3(Size3D(width: 0.005, height: 0.005, depth: 0.005))
             addLights(immersiveContentEntity: immersiveContentEntity)
         }
     }
